@@ -1,0 +1,223 @@
+.experienceSection {
+  padding: 50px 0 70px;
+  scroll-margin-top: 100px;
+}
+
+.experienceInner {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+/* HEADER */
+.experienceHeader {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.experienceHeader h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #0b1f1d;
+}
+
+.experienceHeader p {
+  font-size: 15px;
+  color: #5f6f73;
+  margin-top: 12px;
+}
+
+/* CARD */
+.experienceCard {
+  background: rgba(255, 255, 255, 0.40);
+  border-radius: 22px;
+  padding: 26px 34px;
+  margin-bottom: 26px;
+  animation: popIn 0.9s ease both;
+}
+
+.experienceMeta {
+  margin-bottom: 8px; 
+}
+
+/* META */
+.metaLine {
+  margin-bottom: 2px; 
+  line-height: 0.5;   
+}
+
+/* LABELS */
+.metaLabel {
+  font-size: 18px;
+  font-weight: 800;
+  color: #18b6b0;
+  margin-right: 6px;
+}
+
+.metaValue {
+  font-size: 18px;
+  font-weight: 800;
+  color: #000;
+}
+
+.metaBold {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1d1d1f;
+}
+
+.metaDate {
+  font-size: 14px;
+  font-weight: 700;
+  color: #5f6f73;
+}
+
+/* RESPONSIBILITIES */
+.responsibilityTitle {
+  margin: 14px 0 8px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #0b1f1d;
+}
+
+.responsibilities {
+  padding-left: 16px;
+}
+
+.responsibilities li {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.45;
+  margin-bottom: 7px;
+}
+
+.responsibilities strong {
+  color: #18b6b0;
+}
+
+/* SKILLS */
+.skillsLine {
+  margin-top: 12px;
+  font-size: 15px;
+}
+
+.skillsLabel {
+  font-weight: 800;
+  color: #18b6b0;
+  margin-right: 6px;
+}
+
+.skillsValue {
+  font-weight: 600;
+  color: #5f6f73;
+}
+
+/* ANIMATION */
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   CERTIFICATIONS SECTION
+================================ */
+
+.competencies {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* TITLE */
+.competencies h3 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0b1f1d;
+  margin-bottom: 6px;
+}
+
+/* UNDERLINE */
+.competencies .underline {
+  width: 80px;
+  height: 4px;
+  background: #18b6b0;
+  margin: 12px auto 24px;
+  border-radius: 2px;
+}
+
+/* GRID WRAPPER (CENTERED) */
+.eduCertGrid {
+  display: flex;
+  justify-content: center;
+}
+
+/* LIST */
+.certList {
+  list-style: disc;
+  padding-left: 22px;
+  margin: 0;
+  max-width: 700px;
+  text-align: left;
+}
+
+/* LIST ITEMS */
+.certList li {
+  display: list-item;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1d1d1f;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+/* INLINE LINK */
+.certLink {
+  margin-left: 6px;
+}
+
+.certLink a {
+  font-weight: 700;
+  color: #18b6b0;
+  text-decoration: none;
+}
+
+.certLink a:hover {
+  text-decoration: underline;
+}
+.certProvider {
+  color: #18b6b0;
+  font-weight: 700;
+}
+
+
+/* CERT CODE */
+.certCode {
+  font-weight: 700;
+  color: #5f6f73;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .certList {
+    max-width: 100%;
+    padding-left: 18px;
+  }
+
+  .certList li {
+    font-size: 15px;
+  }
+}
+
+
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .experienceInner {
+    padding: 0 22px;
+  }
+}

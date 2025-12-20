@@ -1,0 +1,245 @@
+/* ================================
+   HOME ROOT
+================================ */
+.homeSection {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+}
+
+/* ================================
+   FADE-IN
+================================ */
+.fadeIn {
+  animation: fadeUp 0.9s ease-out both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================
+   GRID
+================================ */
+.homeInner {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  min-height: 100vh;
+}
+
+/* ================================
+   LEFT TEXT
+================================ */
+.homeText {
+  padding: 160px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* HELLO */
+.introLabel {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #294f4c;
+  margin-bottom: 10px;
+}
+
+/* NAME */
+.heroName {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0 0 14px 0;
+  color: #0b1f1d;
+}
+
+/* ROLE LINE */
+.heroRole {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0 0 18px 0;
+  color: #294f4c;
+  line-height: 1.15;
+}
+
+/* TYPING TEXT */
+.typing {
+  color: #18b6b0;
+  font-weight: 800;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+/* DESCRIPTION */
+.heroDesc {
+  max-width: 480px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #3f5f5c;
+  line-height: 1.45;
+  margin-bottom: 28px;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+.homeActions {
+  display: flex;
+  gap: 16px;
+}
+
+.primaryBtn {
+  background: #0b7b6a;
+  color: #fff;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.primaryBtn:hover {
+  background: #18b6b0;
+  transform: translateY(-1px);
+}
+
+.secondaryBtn {
+  background: #0b7b6a;
+  color: #fff;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.secondaryBtn:hover {
+  background: #18b6b0;
+  transform: translateY(-1px);
+}
+
+/* ================================
+   RIGHT SIDE
+================================ */
+.homeRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================================
+   ILLUSTRATION WRAPPER
+================================ */
+.illustrationWrap {
+  position: relative;
+  width: 520px;
+  max-width: 100%;
+}
+
+/* SVG */
+.workspaceImg {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  animation: softFloat 6s ease-in-out infinite;
+}
+
+@keyframes softFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* ================================
+   TECH BUBBLES
+================================ */
+.techBubble {
+  position: absolute;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  white-space: nowrap;
+  z-index: 3;
+  text-decoration: none;
+  color: #0b1f1d;
+  transition: all 0.25s ease;
+}
+
+.techBubble:hover {
+  background: #18b6b0;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(24, 182, 176, 0.35);
+}
+
+/* POSITIONS */
+.techReact { top: 2%; left: 18%; }
+.techTS    { top: 4%; left: 56%; }
+.techAWS   { top: 40%; right: 4%; }
+.techNode  { bottom: 30%; right: 43%; }
+.techFigma { bottom: 14%; right: 72%; }
+
+/* ================================
+   MOBILE
+================================ */
+@media (max-width: 900px) {
+  .homeInner {
+    grid-template-columns: 1fr;
+  }
+
+  .homeText {
+    padding: 120px 24px;
+    text-align: center;
+  }
+
+  .heroName {
+    font-size: 48px;
+  }
+
+  .heroRole {
+    font-size: 22px;
+  }
+
+  .homeActions {
+    justify-content: center;
+  }
+
+  .illustrationWrap {
+    width: 360px;
+  }
+
+  .techBubble {
+    display: none;
+  }
+}

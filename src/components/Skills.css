@@ -1,0 +1,163 @@
+/* ================================
+   SKILLS SECTION (CENTERED)
+================================ */
+
+.skillsSection {
+  width: 100%;
+  padding: 80px 0 100px;
+  display: flex;
+  scroll-margin-top: 100px;
+  justify-content: center;
+}
+
+.skillsInner {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 80px;
+  text-align: center;
+}
+
+/* ================================
+   HEADER (MATCHES ABOUT)
+================================ */
+
+.skillsHeader h2 {
+  font-size: 46px;
+  font-weight: 800;
+  color: #0b1f1d;
+}
+
+.skillsHeader p {
+  margin-top: 18px;
+  font-size: 17px;
+  color: var(--muted);
+}
+
+/* Reuse underline from About */
+.underline {
+  width: 90px;
+  height: 4px;
+  background: #0f6f6b;
+  margin: 14px auto 0;
+  border-radius: 2px;
+}
+
+/* ================================
+   TABS (CENTERED, NO OVERFLOW)
+================================ */
+
+.skillsTabs {
+  margin: 50px auto;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+  box-shadow: 0 8px 26px rgba(0,0,0,0.08);
+  max-width: 1000px;
+}
+
+.skillsTab {
+  border: none;
+  background: transparent;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.skillsTab:hover {
+  color: var(--accent-dark);
+}
+
+.skillsTab.active {
+  background: #ffffff;
+  color: var(--accent-dark);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* ================================
+   SKILLS GRID
+================================ */
+
+.skillsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  animation: fadeUp 0.35s ease both;
+}
+
+/* ================================
+   SKILL PILL
+================================ */
+
+.skillPill {
+  padding: 12px 22px;
+  background: #ffffff;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+  animation: skillPop 0.3s ease forwards;
+  transition: all 0.25s ease;
+}
+
+.skillPill:hover {
+  background: var(--accent);
+  color: #000;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 14px 34px rgba(24,182,176,0.35);
+}
+
+/* ================================
+   ANIMATIONS
+================================ */
+
+@keyframes skillPop {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+  .skillsInner {
+    padding: 0 24px;
+  }
+
+  .skillsHeader h2 {
+    font-size: 36px;
+  }
+
+  .skillsHeader p {
+    font-size: 15px;
+  }
+}

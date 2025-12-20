@@ -1,0 +1,141 @@
+.tttBody {
+  padding-bottom: 3px;
+}
+
+.tttCard {
+  background: rgba(255,255,255,0.40);
+  border-radius: 22px;
+
+  /* FIX: balanced padding like map */
+  padding: 18px 18px 20px;  
+
+  width: 100%;
+  max-width: 360px;
+  position: relative;
+}
+
+.tttTitle {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 800;
+  color: #18b6b0;
+  margin-bottom: 10px;
+}
+
+/* Difficulty */
+.difficulty {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.difficulty button {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.15);
+  background: rgba(255,255,255,0.75);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.difficulty .active {
+  background: #18b6b0;
+  color: #000;
+}
+
+/* Layout */
+.tttBody {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  align-items: center;
+}
+
+.tttGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;                /* smaller gap */
+}
+
+
+.tttCell {
+  width: 48px;             /* ⬅ reduced */
+  height: 48px;            /* ⬅ reduced */
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: rgba(255,255,255,0.9);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+
+.tttCell:hover {
+  box-shadow: 0 8px 18px rgba(24,182,176,0.25);
+}
+
+.tttCell.filled {
+  background: rgba(24,182,176,0.08);
+}
+
+.mark {
+  font-size: 18px;         /* ⬅ smaller */
+  font-weight: 900;
+}
+
+
+.mark.x { color: #18b6b0; }
+.mark.o { color: #1d1d1f; }
+
+/* Winning Glow */
+.tttCell.win {
+  border-color: #18b6b0;
+  box-shadow: 0 0 18px rgba(24,182,176,0.7);
+  animation: winPulse 0.9s ease-in-out infinite alternate;
+}
+
+@keyframes winPulse {
+  from { box-shadow: 0 0 12px rgba(24,182,176,0.4); }
+  to { box-shadow: 0 0 22px rgba(24,182,176,0.9); }
+}
+
+/* Stats */
+.tttStatsCol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;     /* ⬅ CENTER */
+}
+
+.statLine {
+  width: 100%;
+  max-width: 140px;        /* keeps it compact */
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.6);
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+/* Confetti */
+.confetti {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 20%, #18b6b0 6px, transparent 7px),
+    radial-gradient(circle at 80% 30%, #ffd166 6px, transparent 7px),
+    radial-gradient(circle at 50% 70%, #ef476f 6px, transparent 7px);
+  animation: confetti 1.2s ease-out;
+}
+
+@keyframes confetti {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
