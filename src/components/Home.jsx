@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import useRevealOnScroll from "../Hooks/useRevealOnScroll"
 import "./Home.css";
 import workspaceSvg from "../assets/workspace.svg";
+import resumePdf from "../assets/Mohin_Chandra_Resume.pdf";
+
 
 export default function Home({ homeRef}) {
    const revealRef = homeRef || useRef(null);
@@ -68,13 +70,14 @@ export default function Home({ homeRef}) {
  
 
   <div className="actionItem">
-    <a
-      href="/Mohin_Chandra_Resume.pdf"
-      download
-      className="secondaryBtn"
-    >
-      Download CV ↓
-    </a>
+  <a
+  href={resumePdf}
+  download
+  className="secondaryBtn"
+>
+  Download CV ↓
+</a>
+
   </div>
 </div>
 
