@@ -37,7 +37,7 @@ export default function Footer({ sections }) {
         <div className="footerCol contact bigContact">
           <h4>Connect</h4>
           <span><strong>Location:</strong> Dallas, TX</span>
-          <span><strong>Email:</strong> mohinchandrap@gmail.com</span>
+          <span><strong>Email:</strong>pmohin333@gmail.com</span>
           <span><strong>Phone:</strong> +1 (469) 377- 0064</span>
 
           <a

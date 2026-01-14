@@ -17,7 +17,7 @@ export default function About({ aboutRef }) {
     let y = 0, p = 0, t = 0;
 
     const interval = setInterval(() => {
-      if (y < 9) y++;
+      if (y < 5) y++;
       if (p < 20) p += 2;
       if (t < 10) t++;
 
@@ -25,7 +25,7 @@ export default function About({ aboutRef }) {
       setProjects(p);
       setTech(t);
 
-      if (y >= 9 && p >= 20 && t >= 10) clearInterval(interval);
+      if (y >= 5 && p >= 20 && t >= 10) clearInterval(interval);
     }, 100);
   };
 

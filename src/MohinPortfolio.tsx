@@ -127,7 +127,7 @@ export default function MohinPortfolio() {
 
   <span>
     📧 <a href="mailto:mohinchandrap@gmail.com">
-      mohinchandrap@gmail.com
+      pmohin333@gmail.com
     </a>
   </span>
 

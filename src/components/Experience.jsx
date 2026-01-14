@@ -29,13 +29,13 @@ export default function Experience({ expRef }){
             <p className="metaLine">
               <span className="metaLabel">ROLE:</span>
               <span className="metaBold">
-                Frontend Developer | React.js, Angular, TypeScript, AWS | Energy & Retail Platforms
+                React UI/UX Developer | React.js, TypeScript, AWS | Energy & Retail Platforms
               </span>
             </p>
 
             <p className="metaLine">
               <span className="metaLabel">PERIOD:</span>
-              <span className="metaDate">Sep 2023 – Present</span>
+              <span className="metaDate">Jan 2024 – Present</span>
             </p>
           </div>
 
@@ -43,9 +43,10 @@ export default function Experience({ expRef }){
 
           <ul className="responsibilities">
               <li>
-              Enhanced web application performance by <strong>30%</strong> through the implementation of
-              <strong> React.js</strong> and <strong>Redux</strong> for state management while optimizing
-              UI components for a seamless user experience across devices.
+              Built and maintained interactive, high‑performance web experiences using <strong>React,
+               Angular, JavaScript (ES6+), HTML5, CSS3, Gatsby.js, and Tailwind</strong> ensuring 
+               alignment with UX design vision and brand guidelines.
+
             </li>
             <li>
               Decreased deployment times by <strong>40%</strong> on <strong>AWS</strong> using
@@ -56,8 +57,8 @@ export default function Experience({ expRef }){
               <strong> Spring Boot</strong> and <strong>REST APIs</strong>to facilitate seamless communication between services.
             </li>
             <li>
-              Streamlined code management and collaboration efforts using <strong>Git</strong> and <strong>Bitbucket</strong> for version control, 
-              enhancing team productivity through effective source code management practices.
+              Deployed and maintained web applications on <strong>Netlify with CI/CD workflows,</strong>
+              environment configuration, and automated build optimizations
             </li>
             <li>
               Reduced bug incidents by <strong>25%</strong> through proactive monitoring and debugging using <strong>Splunk</strong> and
@@ -85,13 +86,13 @@ export default function Experience({ expRef }){
             <p className="metaLine">
               <span className="metaLabel">ROLE:</span>
               <span className="metaBold">
-                Frontend Developer | React.js, Next.js, TypeScript | Financial Services Platforms
+                React Native UI/UX Developer | React.js, Next.js, TypeScript | Financial Services Platforms
               </span>
             </p>
 
             <p className="metaLine">
               <span className="metaLabel">PERIOD:</span>
-              <span className="metaDate">Oct 2020 - Aug 2023</span>
+              <span className="metaDate">Nov 2022 - Dec 2023</span>
             </p>
           </div>
 
@@ -126,61 +127,7 @@ export default function Experience({ expRef }){
         </div>
 
 
-        <div className="experienceCard popIn">
-
-          <div className="experienceMeta">
-            <p className="metaLine">
-              <span className="metaLabel">CLIENT:</span>
-              <span className="metaValue">Markel, Glen Allen-VA</span>
-            </p>
-
-            <p className="metaLine">
-              <span className="metaLabel">ROLE:</span>
-              <span className="metaBold">
-                Senior UI Developer | React.js, AngularJS Migration, and Agile Development | Insurance Platforms
-              </span>
-            </p>
-
-            <p className="metaLine">
-              <span className="metaLabel">PERIOD:</span>
-              <span className="metaDate">Feb 2019 – Sep 2020</span>
-            </p>
-          </div>
-
-          <h4 className="responsibilityTitle">Responsibilities:</h4>
-
-          <ul className="responsibilities">
-              <li>
-            Delivered feature enhancements for customer-facing insurance portals and internal systems 
-            with a<strong> Scrum-based team</strong>, improving user engagement metrics by <strong>25%</strong> through iterative 
-            development cycles.
-            </li>
-            <li>
-              Led the successful migration of <strong>legacy AngularJS</strong> applications to <strong>React</strong>, enhancing maintainability 
-              and scalability of the codebase while decreasing technical debt by <strong>30%</strong> over the project lifecycle.
-            </li>
-            <li>
-              Developed interactive screens using <strong>React.js and Redux</strong>that improved application 
-              responsiveness across devices by <strong>35%</strong>, ensuring seamless user interactions in various environments.
-              
-            </li>
-            <li>
-               Integrated <strong>RESTful APIs</strong> effectively while validating request/response payloads using <strong>Postman</strong>
-             to ensure robust backend communication that increased data accuracy by <strong>20%</strong> during transactions.
-            </li>
-            <li>
-              Utilized <strong>Chrome DevTools and Firebug</strong> for performance debugging to resolve UI inconsistencies
-              swiftly; optimized load times by <strong>50%</strong>, significantly enhancing overall user satisfaction scores.
-            </li>
-          </ul>
-
-          <div className="skillsLine">
-            <span className="skillsLabel">Skills:</span>
-            <span className="skillsValue">
-           React.js, AngularJS, Agile Development, API Integration, Performance Optimization
-            </span>
-          </div>
-        </div>
+        
 
         {/* ================= GUCONS ================= */}
         <div className="experienceCard popIn">
@@ -194,12 +141,12 @@ export default function Experience({ expRef }){
             <p className="metaLine">
               <span className="metaLabel">ROLE:</span>
               <span className="metaBold">
-                Front End Developer | React.js, Redux, AngularJS, Node.js | Insurance Network </span>
+               Front End Developer | React.js, AngularJS, D3.js| Financial Dashboards & Service Portals</span>
             </p>
 
             <p className="metaLine">
               <span className="metaLabel">PERIOD:</span>
-              <span className="metaDate">Jun 2016 – July 2018</span>
+              <span className="metaDate">Jun 2020 – May 2022</span>
             </p>
           </div>
 

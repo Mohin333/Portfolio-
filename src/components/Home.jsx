@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import useRevealOnScroll from "../Hooks/useRevealOnScroll"
 import "./Home.css";
 import workspaceSvg from "../assets/workspace.svg";
-import resumePdf from "../assets/Mohin_Chandra_Resume.pdf";
+
 
 
 export default function Home({ homeRef}) {
@@ -70,9 +70,9 @@ export default function Home({ homeRef}) {
  
 
   <div className="actionItem">
-  <a
-  href={resumePdf}
-  download
+<a
+  href={`${import.meta.env.BASE_URL}Mohin UI_UX Developer Resume.docx`}
+  target="_blank"
   className="secondaryBtn"
 >
   Download CV ↓
@@ -116,12 +116,12 @@ export default function Home({ homeRef}) {
             </a>
 
             <a
-              href="https://nodejs.org"
+              href="https://www.gatsbyjs.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="techBubble techNode"
             >
-              Node.js
+              Gatsby.js
             </a>
 
             <a
