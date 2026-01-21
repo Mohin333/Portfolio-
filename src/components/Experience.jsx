@@ -135,18 +135,18 @@ export default function Experience({ expRef }){
           <div className="experienceMeta">
             <p className="metaLine">
               <span className="metaLabel">CLIENT:</span>
-              <span className="metaValue">Gucons Solutions, India</span>
+              <span className="metaValue">Optum, India</span>
             </p>
 
             <p className="metaLine">
               <span className="metaLabel">ROLE:</span>
               <span className="metaBold">
-               Front End Developer | React.js, AngularJS, D3.js| Financial Dashboards & Service Portals</span>
+               Senior Frontend Developer| React.js, AngularJS, Rest API’s| Healthcare Dashboards & Service Portals</span>
             </p>
 
             <p className="metaLine">
               <span className="metaLabel">PERIOD:</span>
-              <span className="metaDate">Jun 2020 – May 2022</span>
+              <span className="metaDate">Feb 2020 – May 2022</span>
             </p>
           </div>
 
@@ -154,12 +154,15 @@ export default function Experience({ expRef }){
 
           <ul className="responsibilities">
           <li>
-              Developed responsive customer portals and internal dashboards using <strong>React.js</strong> and <strong>Redux</strong> that 
-              improved user experience by <strong>25%</strong>, enhancing overall service management efficiency across platforms.
+            Built modular, reusable <strong>React.js</strong> components to support healthcare workflows such as patient 
+            search, claims review, eligibility verification, care coordination dashboards, and member account management across <strong>web and mobile-responsive</strong>
+            platforms.
+
             </li>
             <li>
-              Maintained and optimized legacy <strong>AngularJS</strong> modules to ensure seamless routing and data binding
-              for real-time usage tracking in billing systems, resulting in a <strong> 20%</strong> reduction in system errors.
+              Led the migration of legacy <strong>AngularJS</strong> healthcare modules to modern <strong>React.js</strong> architecture,
+               reducing frontend technical debt by approximately <strong> 35%</strong> and improving long-term maintainability and usability.
+             
             </li>
             <li>
               Integrated <strong>D3.js</strong> visualizations into React components to effectively display network performance 
@@ -173,10 +176,6 @@ export default function Experience({ expRef }){
             <li>
               Designed reusable UI components following object-oriented programming principles that streamlined development processes
               across multiple projects, saving an estimated <strong>40 hours</strong> of development time per project cycle.
-            </li>
-            <li>
-              Collaborated within <strong>Agile</strong> teams during daily stand-ups and sprint reviews to align deliverables
-              with business requirements while ensuring timely project completion within set deadlines. 
             </li>
           </ul>
 

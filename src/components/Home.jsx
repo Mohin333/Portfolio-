@@ -71,7 +71,7 @@ export default function Home({ homeRef}) {
 
   <div className="actionItem">
 <a
-  href={`${import.meta.env.BASE_URL}Mohin UI_UX Developer Resume.docx`}
+  href={`${import.meta.env.BASE_URL}Mohin_Resume.docx`}
   target="_blank"
   className="secondaryBtn"
 >
@@ -116,12 +116,12 @@ export default function Home({ homeRef}) {
             </a>
 
             <a
-              href="https://www.gatsbyjs.com/"
+              href="https://nodejs.org/en"
               target="_blank"
               rel="noopener noreferrer"
               className="techBubble techNode"
             >
-              Gatsby.js
+              Node.js
             </a>
 
             <a

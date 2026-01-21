@@ -87,9 +87,10 @@ export default function About({ aboutRef }) {
           </p>
 
           <p>
-            Earlier, as a Frontend Developer at {""}<strong>Gucons Solutions</strong> in India, I
-            developed dynamic single-page applications using Angular, RxJS, and
-            NgRx for state management. Outside of work, I enjoy staying connected with the tech 
+            Earlier, as a Frontend Developer at {""}<strong>Optum</strong> in India, I
+            Built modular, reusable React.js components to support healthcare workflows such as patient 
+            search, claims review, eligibility verification, care coordination dashboards, and member account management 
+             Outside of work, I enjoy staying connected with the tech 
             community through meetups and online forums where we share insights about 
             new technologies and trends. It’s inspiring to see how passionate individuals 
             come together to innovate and push boundaries.
